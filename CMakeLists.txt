@@ -10,6 +10,17 @@ add_message_files(
   WallList.msg
   Column.msg
   ColumnList.msg
+  Table.msg
+  TableList.msg
+  Waypoint.msg
+  WaypointList.msg
+  ARPair.msg
+  ARPairList.msg
+)
+
+add_service_files(
+  FILES
+  WaypointListService.srv
 )
 
 generate_messages(DEPENDENCIES std_msgs geometry_msgs)
