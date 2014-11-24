@@ -1,28 +1,33 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(yocs_msgs)
 
-find_package(catkin REQUIRED COMPONENTS std_msgs geometry_msgs std_srvs message_generation)
+find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs std_srvs message_generation)
 
-## Generate messages in the 'msg' folder
-add_message_files(
+add_message_files(FILES ARPair.msg
+                        ARPairList.msg
+                        Wall.msg
+                        WallList.msg
+                        Column.msg
+                        ColumnList.msg
+                        NavigationControl.msg
+                        NavigationControlStatus.msg
+                        Table.msg
+                        TableList.msg
+                        Trajectory.msg
+                        TrajectoryList.msg
+                        Waypoint.msg
+                        WaypointList.msg)
+
+add_service_files(FILES WaypointListService.srv)
+
+add_action_files(
+  DIRECTORY action
   FILES
-  Wall.msg
-  WallList.msg
-  Column.msg
-  ColumnList.msg
-  Table.msg
-  TableList.msg
-  Waypoint.msg
-  WaypointList.msg
-  ARPair.msg
-  ARPairList.msg
+  NavigateTo.action
+  DockingInteractor.action
+  Localize.action
 )
 
-add_service_files(
-  FILES
-  WaypointListService.srv
-)
+generate_messages(DEPENDENCIES actionlib_msgs std_msgs geometry_msgs std_srvs)
 
-generate_messages(DEPENDENCIES std_msgs geometry_msgs)
-
-catkin_package(CATKIN_DEPENDS std_msgs geometry_msgs std_srvs message_runtime)
+catkin_package(CATKIN_DEPENDS actionlib_msgs std_msgs geometry_msgs std_srvs message_runtime)
