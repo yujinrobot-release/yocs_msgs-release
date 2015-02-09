@@ -2,6 +2,13 @@
 Changelog for package yocs_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.3 (2015-02-09)
+------------------
+* Merge branch 'indigo' into update
+* add distortion
+* add more commands
+* Contributors: Jihoon Lee
+
 0.6.2 (2014-11-24)
 ------------------
 * merging waypoint messages
