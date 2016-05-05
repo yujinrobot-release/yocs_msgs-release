@@ -1,3 +1,26 @@
+## yocs_msgs (kinetic) - 0.6.3-0
+
+The packages in the `yocs_msgs` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release yocs_msgs --track kinetic --rosdistro kinetic --new-track` on `Thu, 05 May 2016 23:55:47 -0000`
+
+The `yocs_msgs` package was released.
+
+Version of package(s) in repository `yocs_msgs`:
+
+- upstream repository: https://github.com/yujinrobot/yocs_msgs.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.6.3-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.35`
+
+
 ## yocs_msgs (indigo) - 0.6.3-0
 
 The packages in the `yocs_msgs` repository were released into the `indigo` distro by running `/usr/bin/bloom-release yocs_msgs -t indigo -r indigo` on `Mon, 09 Feb 2015 02:41:05 -0000`
