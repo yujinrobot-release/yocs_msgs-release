@@ -1,13 +1,10 @@
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package yocs_msgs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=========
+Changelog
+=========
 
-0.6.3 (2015-02-09)
+0.6.3 (2015-10-10)
 ------------------
-* Merge branch 'indigo' into update
-* add distortion
-* add more commands
-* Contributors: Jihoon Lee
+* joystick button relay messages
 
 0.6.2 (2014-11-24)
 ------------------
