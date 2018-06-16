@@ -1,0 +1,12 @@
+Source: ros-melodic-yocs-msgs
+Section: misc
+Priority: extra
+Maintainer: Jihoon Lee <jihoonl@yujinrobot.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-actionlib-msgs, ros-melodic-catkin, ros-melodic-dynamic-reconfigure, ros-melodic-geometry-msgs, ros-melodic-message-generation, ros-melodic-std-msgs, ros-melodic-std-srvs
+Homepage: http://ros.org/wiki/yocs_msgs
+Standards-Version: 3.9.2
+
+Package: ros-melodic-yocs-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-actionlib-msgs, ros-melodic-dynamic-reconfigure, ros-melodic-geometry-msgs, ros-melodic-message-runtime, ros-melodic-std-msgs, ros-melodic-std-srvs
+Description: Yujin's Open Control System messages, services and actions
